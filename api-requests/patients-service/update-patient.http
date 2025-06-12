@@ -1,0 +1,13 @@
+### Update Patient
+PUT http://localhost:4000/patients/223e4567-e89b-12d3-a456-426614174012
+Content-Type: application/json
+
+{
+  "name": "Senibo Don-Pedro22ww",
+  "email": "te@gmail.com",
+  "address": "Home",
+  "dateOfBirth": "1999-02-08",
+  "registeredDate": "2019-02-11"
+}
+
+###
