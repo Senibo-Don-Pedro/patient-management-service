@@ -76,7 +76,7 @@ public class PatientServiceImpl implements PatientService {
 
     }
 
-
+    @Override
     public void deletePatient(UUID id) {
         patientRepository.deleteById(id);
     }
