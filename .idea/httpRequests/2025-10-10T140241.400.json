@@ -1,0 +1,7 @@
+{
+  "success": false,
+  "message": "Malformed JSON",
+  "errors": [
+    "Invalid date format. Supported: yyyy-MM-dd, dd-MM-yyyy, MM-dd-yyyy, dd/MM/yyyy, MM/dd/yyyy\n at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 5, column: 18] (through reference chain: com.pm.patientservice.dto.PatientRequestDTO[\"dateOfBirth\"])"
+  ]
+}

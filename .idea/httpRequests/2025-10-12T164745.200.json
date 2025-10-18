@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "message": "Patient updated successfully",
+  "data": {
+    "id": "223e4567-e89b-12d3-a456-426614174013",
+    "name": "Sex",
+    "email": "test2@example.com",
+    "address": "123 main street",
+    "dateOfBirth": "08-02-1999"
+  }
+}

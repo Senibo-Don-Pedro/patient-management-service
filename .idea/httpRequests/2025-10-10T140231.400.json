@@ -1,0 +1,7 @@
+{
+  "success": false,
+  "message": "Malformed JSON",
+  "errors": [
+    "Unexpected character (',' (code 44)): expected a value\n at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 3, column: 12]"
+  ]
+}

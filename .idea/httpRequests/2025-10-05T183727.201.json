@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "message": "Patient created successfully",
+  "data": {
+    "id": "2609e462-2df5-4afd-b1f7-c11518f7dbdb",
+    "name": "Test",
+    "email": "test@example.com",
+    "address": "123 main street",
+    "dateOfBirth": "08-02-1999"
+  }
+}

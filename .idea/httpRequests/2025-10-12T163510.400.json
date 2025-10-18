@@ -1,0 +1,8 @@
+{
+  "success": false,
+  "message": "Validation Failed",
+  "errors": [
+    "Name is required",
+    "Registered Date is required"
+  ]
+}
