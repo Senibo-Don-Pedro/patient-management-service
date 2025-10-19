@@ -1,7 +1,0 @@
-{
-  "success": false,
-  "message": "Validation Failed",
-  "errors": [
-    "Email is required"
-  ]
-}

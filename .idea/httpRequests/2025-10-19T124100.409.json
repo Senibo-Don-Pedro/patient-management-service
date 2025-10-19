@@ -1,0 +1,4 @@
+{
+  "success": false,
+  "message": "Patient with email -> TEST_BILLING_ACCOUNT2@example.com already exists"
+}

@@ -22,17 +22,18 @@ import java.time.LocalDateTime;
 public abstract class BaseEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(columnDefinition = "uuid")
     private UUID id;
 
     @CreatedDate // 3. Replaced @CreationTimestamp
 //    @Column(nullable = false, updatable = false)
-    @Column(nullable = true, updatable = false)
+    @Column(name = "created_at", nullable = false, updatable = false)
     // Good practice to make it non-nullable and non-updatable
     private LocalDateTime createdAt;
 
     @LastModifiedDate // 4. Replaced @UpdateTimestamp
 //    @Column(nullable = false) // Good practice to make it non-nullable
-    @Column(nullable = true) // Good practice to make it non-nullable
+    @Column(name = "updated_at", nullable = false) // Good practice to make it non-nullable
     private LocalDateTime updatedAt;
 }

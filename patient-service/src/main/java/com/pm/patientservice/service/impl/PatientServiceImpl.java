@@ -5,6 +5,8 @@ import com.pm.patientservice.dto.PatientRequestDTO;
 import com.pm.patientservice.dto.PatientResponseDTO;
 import com.pm.patientservice.exception.AlreadyExistsException;
 import com.pm.patientservice.exception.NotFoundException;
+import com.pm.patientservice.grpc.BillingServiceGrpcClient;
+import com.pm.patientservice.kafka.KafkaProducer;
 import com.pm.patientservice.model.Patient;
 import com.pm.patientservice.repository.PatientRepository;
 import com.pm.patientservice.service.PatientService;
@@ -18,9 +20,17 @@ public class PatientServiceImpl implements PatientService {
 
 
     private final PatientRepository patientRepository;
+    private final BillingServiceGrpcClient billingServiceGrpcClient;
+    private final KafkaProducer kafkaProducer;
 
-    public PatientServiceImpl(PatientRepository patientRepository) {
+
+    public PatientServiceImpl(PatientRepository patientRepository,
+                              BillingServiceGrpcClient billingServiceGrpcClient,
+                              KafkaProducer kafkaProducer) {
+
         this.patientRepository = patientRepository;
+        this.billingServiceGrpcClient = billingServiceGrpcClient;
+        this.kafkaProducer = kafkaProducer;
     }
 
 
@@ -47,6 +57,11 @@ public class PatientServiceImpl implements PatientService {
         }
 
         Patient patient = patientRepository.save(toEntity(patientRequestDTO));
+
+        billingServiceGrpcClient.createBillingAccount(patient.getId().toString(),
+                                                      patient.getName(), patient.getEmail());
+
+        kafkaProducer.sendEvent(patient);
 
         return new ApiSuccessResponse<>(
                 true,
@@ -85,7 +100,7 @@ public class PatientServiceImpl implements PatientService {
     @Override
     public void deletePatient(UUID id) {
 
-        Patient patient = patientRepository.findById(id).orElseThrow(
+        patientRepository.findById(id).orElseThrow(
                 () -> new NotFoundException(String.format("Patient not found with id: %s", id))
         );
 

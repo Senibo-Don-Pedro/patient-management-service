@@ -30,7 +30,7 @@ public record PatientRequestDTO(
         @JsonDeserialize(using = MultiFormatLocalDateDeserializer.class)
         LocalDate dateOfBirth,
 
-        @NotBlank(groups = CreatePatientValidationGroup.class, message = "Registered Date is required")
+        @NotNull(groups = CreatePatientValidationGroup.class, message = "Registered Date is required")
         @JsonDeserialize(using = MultiFormatLocalDateDeserializer.class)
         LocalDate registeredDate
 ) {

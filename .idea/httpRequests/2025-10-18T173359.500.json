@@ -1,0 +1,4 @@
+{
+  "success": false,
+  "message": "HV000030: No validator could be found for constraint 'jakarta.validation.constraints.NotBlank' validating type 'java.time.LocalDate'. Check configuration for 'registeredDate'"
+}

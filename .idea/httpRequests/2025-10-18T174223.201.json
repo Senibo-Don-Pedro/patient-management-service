@@ -2,9 +2,9 @@
   "success": true,
   "message": "Patient created successfully",
   "data": {
-    "id": "2609e462-2df5-4afd-b1f7-c11518f7dbdb",
-    "name": "Test",
-    "email": "test@example.com",
+    "id": "a4348a64-a2fe-44bf-a9f3-5c1ab3e2efb7",
+    "name": "JOHN DOE WITH BILLING ACCOUNT",
+    "email": "TEST_BILLING_ACCOUNT@example.com",
     "address": "123 main street",
     "dateOfBirth": "08-02-1999"
   }
