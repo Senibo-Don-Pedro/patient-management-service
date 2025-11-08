@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "message": "Patient created successfully",
+  "data": {
+    "id": "fa6cf27c-75e2-4c9f-aa4c-7d1411b99465",
+    "name": "JOHN DOE KAFKA TEST",
+    "email": "KAFKA_TEST@example.com",
+    "address": "123 main street",
+    "dateOfBirth": "08-02-1999"
+  }
+}

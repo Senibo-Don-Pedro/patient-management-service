@@ -1,0 +1,4 @@
+{
+  "success": false,
+  "message": "Patient with email -> KAFKA_TEST@example.com already exists"
+}
