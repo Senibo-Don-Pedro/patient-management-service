@@ -106,6 +106,55 @@
       "email": "isabella.walker@example.com",
       "address": "789 Willow St, Springfield",
       "dateOfBirth": "17-10-1987"
+    },
+    {
+      "id": "a4348a64-a2fe-44bf-a9f3-5c1ab3e2efb7",
+      "name": "JOHN DOE WITH BILLING ACCOUNT",
+      "email": "TEST_BILLING_ACCOUNT@example.com",
+      "address": "123 main street",
+      "dateOfBirth": "08-02-1999"
+    },
+    {
+      "id": "ebfe91cf-5985-475c-99af-a6243bdb5548",
+      "name": "JOHN DOE WITH BILLING ACCOUNT",
+      "email": "TEST_BILLING_ACCOUNT2@example.com",
+      "address": "123 main street",
+      "dateOfBirth": "08-02-1999"
+    },
+    {
+      "id": "85031fe8-28db-4943-91dc-188d85f38576",
+      "name": "JOHN DOE WITH BILLING ACCOUNT",
+      "email": "TEST_BILLING_ACCOUNT3@example.com",
+      "address": "123 main street",
+      "dateOfBirth": "08-02-1999"
+    },
+    {
+      "id": "fa6cf27c-75e2-4c9f-aa4c-7d1411b99465",
+      "name": "JOHN DOE KAFKA TEST",
+      "email": "KAFKA_TEST@example.com",
+      "address": "123 main street",
+      "dateOfBirth": "08-02-1999"
+    },
+    {
+      "id": "94fc4288-7fd8-4ae8-afe2-48db9c080364",
+      "name": "JOHN DOE KAFKA TEST2",
+      "email": "KAFKA_TEST2@example.com",
+      "address": "123 main street",
+      "dateOfBirth": "08-02-1999"
+    },
+    {
+      "id": "b01d6308-f744-4b02-a9bd-f488f9f1cd34",
+      "name": "JOHN DOE KAFKA TEST3",
+      "email": "KAFKA_TEST3@example.com",
+      "address": "123 main street",
+      "dateOfBirth": "08-02-1999"
+    },
+    {
+      "id": "4daaf33c-19af-43b1-a4f7-22a6f17ebf32",
+      "name": "JOHN DOE KAFKA TEST4",
+      "email": "KAFKA_TEST4@example.com",
+      "address": "123 main street",
+      "dateOfBirth": "08-02-1999"
     }
   ]
 }
